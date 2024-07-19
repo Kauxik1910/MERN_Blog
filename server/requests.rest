@@ -1,7 +1,19 @@
-POST http://localhost:3000/signin 
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NmYyMTRlOWZmNDIwMzc2NTA1ODFmZSIsImlhdCI6MTcxODU1OTA1NH0.8xg0JLtKcXjgAuHOfZn8bo3Q1EG0tzdGxvB_tqCJYRk
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NmFlNzM0OTI2OWFhOGE3ZDdmM2UzYyIsImlhdCI6MTcyMDUyOTA5OH0.bo-rYUnvQOnHH6NMGmsbUGT0D63ozB19_vvY64AVSpk
+
+# POST http://localhost:3000/get-blog
+# Content-Type: application/json
+
+# {
+#     "blog_id": "India-Launches-Aditya-L1-Solar-ObservatoryFiLfu6dxI1nlymgHLQdA5"
+# }
+
+POST http://localhost:3000/user-written-blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NmFlNzM0OTI2OWFhOGE3ZDdmM2UzYyIsImlhdCI6MTcyMTExMjYxMn0.EJVzJRrKSRBhMl4r8YVSDhN7C-7IQBIQ4hKioxoisQM
 Content-Type: application/json
 
 {
-    "email": "kunaa@gmail.com",
-    "password": "Kunaal"
+    "page": 1,
+    "draft": true
+
 }
