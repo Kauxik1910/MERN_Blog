@@ -30,7 +30,9 @@ server.use(cors())
 mongoose.connect(process.env.DB_LOCATION), {
     autoIndex: true,
 }
-
+server.get('/',(req,res)=>(
+    res.send('API is running...');
+))
 const verifyJWT = (req, res, next) => {
 
     const authHeader = req.headers['authorization'];
